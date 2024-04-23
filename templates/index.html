@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Generator</title>
+  <link rel="stylesheet" href="D:\\Devops\\resume\\static\\styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Generator</h1>
+    <form id="resumeForm" action="/generate_resume" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="linkedin">LinkedIn Profile:</label>
+        <input type="url" id="linkedin" name="linkedin">
+      </div>
+      
+      <div class="form-group">
+        <label for="github">GitHub Profile:</label>
+        <input type="url" id="github" name="github">
+      </div>
+      
+      <div class="form-group">
+        <label for="education">Education:</label>
+        <textarea id="education" name="education" required></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="experience">Experience:</label>
+        <textarea id="experience" name="experience" required></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="projects">Projects:</label>
+        <textarea id="projects" name="projects"></textarea>
+      </div>
+      
+      <button type="submit">Generate Resume</button>
+    </form>
+  </div>
+</body>
+</html>
